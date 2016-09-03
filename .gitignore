@@ -1,3 +1,9 @@
+venv
+
+
+# Created by https://www.gitignore.io/api/python,vim
+
+### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -5,7 +11,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+*.log
 # Distribution / packaging
 .Python
 env/
@@ -87,3 +93,16 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+
+### Vim ###
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
