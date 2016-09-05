@@ -18,9 +18,9 @@ if __name__ == '__main__':
     def custom_hand(a, b):
         print 'xxxx:' , a, b
  
-    signal.signal(signal.SIGCHLD, custom_hand)
+    signal.signal(signal.SIGCHLD, signal.SIG_IGN)
 
-    process_list = [Subprocess(module='demo01_worker', idx=x) for x in range(0, 5)]
+    process_list = [Subprocess(module='demo01_worker', idx=x) for x in range(0, 3)]
 
     for process in process_list:
         process.spawn()
